@@ -1,0 +1,33 @@
+{
+      "students": [
+            {
+                  "userId": 1,
+                  "name": "John Smith",
+                  "phoneNumber": "1234444",
+                  "classes": [
+                        "MATH",
+                        "CM2"
+                  ]
+            },
+            {
+                  "userId": 2,
+                  "name": "Jane Doe",
+                  "phoneNumber": "1235555",
+                  "classes": [
+                        "CS1",
+                        "MATH"
+                  ]
+            },
+            {
+                  "userId": 3,
+                  "name": "Kevin Connor",
+                  "phoneNumber": "1238888",
+                  "classes": [
+                        "STAT1",
+                        "STAT2"
+                  ]
+            }
+      ],
+      "state": "CA",
+      "country": "USA"
+}

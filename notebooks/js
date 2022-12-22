@@ -1,0 +1,7 @@
+#!/bin/zsh
+echo " "
+echo "[ Status ]"
+LINE=$(docker ps | grep 'jupyter/datascience-notebook')
+[ -z "$LINE" ] && echo " -- Not running --" || cat $LINE
+echo " "
+

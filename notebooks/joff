@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+CMD=$(docker ps | grep 'jupyter/datascience-notebook' | cut -d' ' -f 1 | sed 's/^/docker stop /g')
+echo $CMD
+eval $CMD
+

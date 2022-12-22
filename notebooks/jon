@@ -1,0 +1,22 @@
+#!/bin/zsh -x
+
+./joff
+# doketcker run -it --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/datascience-notebook 
+# DOCKER_KEY=$(docker run -it --detach --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/datascience-notebook)
+DOCKER_KEY=$(docker run -it --detach --rm -p 8888:8888 -v $(pwd):/home/jovyan jupyter/datascience-notebook)
+sleep 4
+URL=$(docker logs ${DOCKER_KEY} | grep -v '\[I' | grep 'or http://127.0.0.1' | cut -d' ' -f7)
+echo $URL
+open $URL
+
+# bash "docker run -it --detach --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/datascience-notebook &>${LOG_FILE}"" &
+# TOKEN=$(cat $LOG_FILE)
+# CMD="http://127.0.0.1:8888/lab?token=${TOKEN}"
+# echo $CMD
+
+# docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "\
+#    conda install jupyter -y --quiet && \
+#    mkdir -p /opt/notebooks && \
+#    jupyter notebook \
+#    --notebook-dir=/opt/notebooks --ip='*' --port=8888 \
+#    --no-browser --allow-root"

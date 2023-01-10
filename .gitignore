@@ -1,7 +1,13 @@
 # Marilson added
 *.DS_Store
 *.zip
+notebooks/saved_2022/
+students/
+notebooks/.jupyter/
+notebooks/.local/
 
+LOG_FILE
+scratch/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

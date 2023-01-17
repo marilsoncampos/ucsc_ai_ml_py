@@ -5,6 +5,8 @@ notebooks/saved_2022/
 students/
 notebooks/.jupyter/
 notebooks/.local/
+notebooks/saved_zips/
+slides/pdfs/
 
 LOG_FILE
 scratch/

@@ -1,1 +1,2 @@
-# ucsc_ai_py README
+# ucsc_ai_py
+UC Santa Cruz materials for my class
